@@ -43,7 +43,7 @@ RSSHub can be used with browser extension [RSSHub Radar](https://github.com/DIYg
 
 Logo designer [sheldonrrr](https://dribbble.com/sheldonrrr)
 
-### Backers
+### Backersd
 
 <a href="https://www.cloudflare.com" target="_blank"><img height="50px" src="https://i.imgur.com/7Ph27Fq.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.netlify.com" target="_blank"><img height="40px" src="https://i.imgur.com/cU01915.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://1password.com" target="_blank"><img height="40px" src="https://i.imgur.com/a2XjflO.png"></a>
 
