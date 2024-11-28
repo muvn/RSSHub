@@ -80539,7 +80539,10 @@
   "taptap": {
     "routes": {
       "/changelog/:id/:lang?": {
-        "path": "/changelog/:id/:lang?",
+        "path": [
+          "/changelog/:id/:lang?",
+          "/intl/changelog/:id/:lang?"
+        ],
         "categories": [
           "game"
         ],
@@ -80559,7 +80562,7 @@
         "radar": [
           {
             "source": [
-              "www.taptap.cn/app/:id"
+              "taptap.com/app/:id"
             ],
             "target": "/changelog/:id"
           }
@@ -80569,17 +80572,21 @@
           "hoilc",
           "ETiV"
         ],
-        "location": "changelog-cn.ts"
+        "description": "#### 语言代码\n\n  | English (US) | 繁體中文 | 한국어 | 日本語 |\n  | ------------ | -------- | ------ | ------ |\n  | en_US       | zh_TW   | ko_KR | ja_JP |",
+        "location": "changelog.ts"
       },
       "/intl/changelog/:id/:lang?": {
-        "path": "/intl/changelog/:id/:lang?",
+        "path": [
+          "/changelog/:id/:lang?",
+          "/intl/changelog/:id/:lang?"
+        ],
         "categories": [
           "game"
         ],
-        "example": "/taptap/intl/changelog/191001/zh_TW",
+        "example": "/taptap/changelog/60809/en_US",
         "parameters": {
-          "id": "Game's App ID, you may find it from the URL of the Game",
-          "lang": "Language, checkout the table below for possible values, default is `en_US`"
+          "id": "游戏 ID，游戏主页 URL 中获取",
+          "lang": "语言，默认使用 `zh_CN`，亦可使用 `en_US`"
         },
         "features": {
           "requireConfig": false,
@@ -80592,29 +80599,32 @@
         "radar": [
           {
             "source": [
-              "www.taptap.io/app/:id"
+              "taptap.com/app/:id"
             ],
-            "target": "/intl/changelog/:id"
+            "target": "/changelog/:id"
           }
         ],
-        "name": "Game's Changelog",
+        "name": "游戏更新",
         "maintainers": [
           "hoilc",
           "ETiV"
         ],
-        "description": "Language Code\n\n  | English (US) | 繁體中文 | 한국어 | 日本語 |\n  | ------------ | -------- | ------ | ------ |\n  | en_US       | zh_TW   | ko_KR | ja_JP |",
-        "location": "changelog-intl.ts"
+        "description": "#### 语言代码\n\n  | English (US) | 繁體中文 | 한국어 | 日本語 |\n  | ------------ | -------- | ------ | ------ |\n  | en_US       | zh_TW   | ko_KR | ja_JP |",
+        "location": "changelog.ts"
       },
       "/review/:id/:order?/:lang?": {
-        "path": "/review/:id/:order?/:lang?",
+        "path": [
+          "/review/:id/:order?/:lang?",
+          "/intl/review/:id/:order?/:lang?"
+        ],
         "categories": [
           "game"
         ],
         "example": "/taptap/review/142793/hot",
         "parameters": {
           "id": "游戏 ID，游戏主页 URL 中获取",
-          "order": "排序方式，空为综合，可选如下",
-          "lang": "语言，`zh-CN` 或 `zh-TW`，默认为 `zh-CN`"
+          "order": "排序方式，空为默认排序，可选如下",
+          "lang": "语言，`zh-CN`或`zh-TW`，默认为`zh-CN`"
         },
         "features": {
           "requireConfig": false,
@@ -80627,8 +80637,8 @@
         "radar": [
           {
             "source": [
-              "www.taptap.cn/app/:id/review",
-              "www.taptap.cn/app/:id"
+              "taptap.com/app/:id/review",
+              "taptap.com/app/:id"
             ],
             "target": "/review/:id"
           }
@@ -80638,19 +80648,22 @@
           "hoilc",
           "TonyRL"
         ],
-        "description": "| 最新   | 综合 |\n| --- | --- |\n| new | hot |",
-        "location": "review-cn.ts"
+        "description": "| 最新   | 最热 | 游戏时长 | 默认排序 |\n  | ------ | ---- | -------- | -------- |\n  | update | hot  | spent    | default  |",
+        "location": "review.ts"
       },
       "/intl/review/:id/:order?/:lang?": {
-        "path": "/intl/review/:id/:order?/:lang?",
+        "path": [
+          "/review/:id/:order?/:lang?",
+          "/intl/review/:id/:order?/:lang?"
+        ],
         "categories": [
           "game"
         ],
-        "example": "/taptap/intl/review/82354/recent",
+        "example": "/taptap/review/142793/hot",
         "parameters": {
-          "id": "Game's App ID, you may find it from the URL of the Game",
-          "order": "Sort Method, default is `helpful`, checkout the table below for possible values",
-          "lang": "Language, checkout the table below for possible values, default is `en_US`"
+          "id": "游戏 ID，游戏主页 URL 中获取",
+          "order": "排序方式，空为默认排序，可选如下",
+          "lang": "语言，`zh-CN`或`zh-TW`，默认为`zh-CN`"
         },
         "features": {
           "requireConfig": false,
@@ -80663,20 +80676,19 @@
         "radar": [
           {
             "source": [
-              "www.taptap.io/app/:id/review",
-              "www.taptap.io/app/:id"
+              "taptap.com/app/:id/review",
+              "taptap.com/app/:id"
             ],
-            "target": "/intl/review/:id"
+            "target": "/review/:id"
           }
         ],
-        "name": "Ratings & Reviews",
+        "name": "游戏评价",
         "maintainers": [
           "hoilc",
-          "TonyRL",
-          "ETiV"
+          "TonyRL"
         ],
-        "description": "Sort Method\n\n| Most Helpful | Most Recent |\n| ------------ | ----------- |\n| helpful      | recent      |\n\nLanguage Code\n\n| English (US) | 繁體中文 | 한국어 | 日本語 |\n| ------------ | -------- | ------ | ------ |\n| en_US       | zh_TW   | ko_KR | ja_JP |",
-        "location": "review-intl.ts"
+        "description": "| 最新   | 最热 | 游戏时长 | 默认排序 |\n  | ------ | ---- | -------- | -------- |\n  | update | hot  | spent    | default  |",
+        "location": "review.ts"
       },
       "/topic/:id/:type?/:sort?/:lang?": {
         "path": "/topic/:id/:type?/:sort?/:lang?",
@@ -80701,8 +80713,8 @@
         "radar": [
           {
             "source": [
-              "taptap.cn/app/:id/topic",
-              "taptap.cn/app/:id"
+              "taptap.com/app/:id/topic",
+              "taptap.com/app/:id"
             ],
             "target": "/topic/:id"
           }
@@ -80712,12 +80724,12 @@
           "hoilc",
           "TonyRL"
         ],
-        "description": "| 全部 | 精华  | 官方     | 影片  |\n| ---- | ----- | -------- | ----- |\n| feed | elite | official | video |\n\n| 发布时间 | 回复时间  | 默认排序 |\n| -------- | --------- | ------- |\n| created  | commented | default |",
+        "description": "| 全部 | 精华  | 官方     | 影片  |\n  | ---- | ----- | -------- | ----- |\n  | feed | elite | official | video |\n\n  | 发布时间 | 回复时间  |\n  | -------- | --------- |\n  | created  | commented |",
         "location": "topic.ts"
       }
     },
-    "name": "TapTap",
-    "url": "www.taptap.io",
+    "name": "TapTap 中国",
+    "url": "taptap.com",
     "description": ":::warning\n由于区域限制，需要在有国内 IP 的机器上自建才能正常获取 RSS。而对于《TapTap 国际版》则需要部署在具有海外出口的 IP 上才可正常获取 RSS。\n:::",
     "lang": "zh-CN"
   },
@@ -82280,8 +82292,8 @@
       }
     },
     "name": "PetCity 毛孩日常",
-    "url": "thepetcity.co",
-    "lang": "zh-TW"
+    "url": "thepetcity.com",
+    "lang": "en"
   },
   "theverge": {
     "routes": {

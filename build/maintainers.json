@@ -6517,8 +6517,7 @@
   ],
   "/taptap/intl/review/:id/:order?/:lang?": [
     "hoilc",
-    "TonyRL",
-    "ETiV"
+    "TonyRL"
   ],
   "/taptap/topic/:id/:type?/:sort?/:lang?": [
     "hoilc",
