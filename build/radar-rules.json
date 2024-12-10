@@ -10663,7 +10663,7 @@
         "source": [
           "/:user"
         ],
-        "target": "/github/repos/:user/:type?/:sort?"
+        "target": "/github/repos/:user"
       },
       {
         "title": "Repo Stars",

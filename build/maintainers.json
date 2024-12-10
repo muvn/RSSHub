@@ -2599,7 +2599,7 @@
   "/github/pulse/:user/:repo/:period?": [
     "jameschensmith"
   ],
-  "/github/repos/:user/:type?/:sort?": [
+  "/github/repos/:user": [
     "DIYgod"
   ],
   "/github/search/:query/:sort?/:order?": [
