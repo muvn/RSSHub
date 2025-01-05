@@ -138,6 +138,12 @@
   "/2cycd/:fid/:sort?": [
     "shelken"
   ],
+  "/30secondsofcode/category/:category?/:subCategory?": [
+    "Rjnishant530"
+  ],
+  "/30secondsofcode/latest": [
+    "Rjnishant530"
+  ],
   "/36kr/hot-list/:category?": [
     "nczitzk"
   ],
@@ -7198,6 +7204,9 @@
   ],
   "/upc/yjs": [
     "shengmaosu"
+  ],
+  "/ups/track/:trackingNumber": [
+    "Aquabet"
   ],
   "/uptimerobot/rss/:id/:routeParams?": [
     "Rongronggg9"

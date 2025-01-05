@@ -1466,6 +1466,96 @@
     "url": "2cycd.com",
     "lang": "zh-CN"
   },
+  "30secondsofcode": {
+    "routes": {
+      "/category/:category?/:subCategory?": {
+        "path": "/category/:category?/:subCategory?",
+        "categories": [
+          "programming"
+        ],
+        "example": "/category/css/interactivity",
+        "parameters": {
+          "category": {
+            "description": "Main Category. For Complete list visit site \"https://www.30secondsofcode.org/collections/p/1/\"",
+            "options": [
+              {
+                "value": "js",
+                "label": "Javascript"
+              },
+              {
+                "value": "css",
+                "label": "CSS"
+              },
+              {
+                "value": "algorithm",
+                "label": "JavaScript Algorithms"
+              },
+              {
+                "value": "react",
+                "label": "React"
+              }
+            ]
+          },
+          "subCategory": {
+            "description": "Filter within Category. Visit Individual Category site for subCategories"
+          }
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "30secondsofcode.org/:category/:subCategory/",
+              "30secondsofcode.org/:category/"
+            ],
+            "target": "/category/:category/:subCategory"
+          }
+        ],
+        "name": "Category and Subcategory",
+        "maintainers": [
+          "Rjnishant530"
+        ],
+        "location": "category.ts"
+      },
+      "/latest": {
+        "path": "/latest",
+        "categories": [
+          "programming"
+        ],
+        "example": "/latest",
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "30secondsofcode.org"
+            ],
+            "target": "/latest"
+          }
+        ],
+        "name": "New & Popular Snippets",
+        "maintainers": [
+          "Rjnishant530"
+        ],
+        "location": "new-and-popular.ts"
+      }
+    },
+    "name": "30 Seconds of code",
+    "url": "www.30secondsofcode.org",
+    "lang": "en"
+  },
   "36kr": {
     "routes": {
       "/hot-list/:category?": {
@@ -88834,6 +88924,40 @@
     "name": "中国石油大学（华东）",
     "url": "computer.upc.edu.cn",
     "lang": "zh-CN"
+  },
+  "ups": {
+    "routes": {
+      "/track/:trackingNumber": {
+        "path": "/track/:trackingNumber",
+        "categories": [
+          "other"
+        ],
+        "example": "/ups/track/1Z78R6790470567520",
+        "parameters": {
+          "trackingNumber": "The UPS tracking number (e.g., 1Z78R6790470567520)."
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "Tracking",
+        "maintainers": [
+          "Aquabet"
+        ],
+        "location": "track.ts"
+      }
+    },
+    "name": "UPS",
+    "url": "ups.com",
+    "description": "United Parcel Service (UPS) updates, news, and tracking RSS feeds.",
+    "zh": {
+      "name": "UPS(联合包裹服务公司)",
+      "description": "联合包裹服务公司（UPS）的更新、新闻和追踪 RSS 源。"
+    }
   },
   "uptimerobot": {
     "routes": {
